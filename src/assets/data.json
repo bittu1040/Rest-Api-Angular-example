@@ -1,0 +1,12 @@
+{
+    "students": [
+      { "id": 1, "name": "Bittu", "age": 21, "mobile": "345678", "email": "fgh@ghj.com", "address": "blr" }
+    ],
+    "comments": [
+      { "id": 1, "body": "some comment", "postId": 1 }
+    ],
+    "profile": { "name": "typicode" }
+  }
+
+
+  

@@ -1,0 +1,26 @@
+<!-- <pre>{{selectedContact | json}}</pre> -->
+
+
+<div class="card sticky-top shadow-lg"  *ngIf="isNotEmpty()">
+    <img [src]="selectedContact.picture.large" alt="">
+    <div class="card-body">
+
+        <ul class="list-group">
+            <li class="list-group-item">
+                NAME: {{selectedContact.name.first}} {{selectedContact.name.last}}
+            </li>
+            <li class="list-group-item">
+                {{selectedContact.email}}
+            </li>
+            <li class="list-group-item">
+                AGE: {{selectedContact.dob.age}} 
+            </li>
+            <li class="list-group-item">
+                CITY: {{selectedContact.location.city}} 
+            </li>
+            <li class="list-group-item">
+                STATE: {{selectedContact.location.state}}
+            </li>
+        </ul>
+    </div>
+</div>
