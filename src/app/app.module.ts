@@ -12,20 +12,16 @@ import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatTableModule} from '@angular/material/table';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
-import {HttpDataService} from './services/http-data.service';
-import { UserListComponent } from './user-list/user-list.component';
-import { ContactAppComponent } from './contact-app/contact-app.component';
-import { ContactListComponent } from './contact-list/contact-list.component';
-import { ContactCardComponent } from './contact-card/contact-card.component'
+
+import { AlbumsService } from './models.service';
+import { AlbumComponent } from './album/album.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    UserListComponent,
-    ContactAppComponent,
-    ContactListComponent,
-    ContactCardComponent
+    AlbumComponent
+ 
   ],
   imports: [
     BrowserModule,
@@ -41,7 +37,7 @@ import { ContactCardComponent } from './contact-card/contact-card.component'
     MatToolbarModule,
     MatIconModule
   ],
-  providers: [HttpDataService],
+  providers: [ AlbumsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
